@@ -1,0 +1,27 @@
+GIT DESDE 0
+
+CONFIGURACIÓN INICIAL
+
+-git config --global user.name "alvarooo32" => configurar el nombre de usuario
+-git config --global user.email "alvaro23.ossa@gmail.com" => configurar el email
+-git config --list => te enseña todas las configuraciones
+-git config --list --global => te enseña todas las configuraciones que ya tenemos echas tb se puede en local
+-git config --global core.editor code.editor "code --wait" => para conectar git con el visual code + (--wait) = decir que espere a cerrarlo para que se guarde el cambio
+-git config --global color.ui true => las salidas en pantalla de git se cen mas coloridas
+-git config --global core.autocrlf true/input => **(true solo en windows) (input solo en linux/mac)para que cuando subamos o bajemos el archivo no haya problemas al pasar archivos de otros sistemas lo que hace es pasar a la linea de abajo y volver al principio**
+
+(COMANDOS HABITUALES)
+-cd <nombre> => para moverse entre carpetas || cd ../ => para retroceder de carpeta
+-mkdir <nombre> =>crear carpeta || rmdir <nombre> =>eliminar carpeta
+-ls => muestra los archivos y carpetas que hay en tu ubicacion
+ls -a => muestra tambien los archivos ocultos
+-pwd => muestra la ruta en la que estas actualmente
+
+(ADD Y COMMINTS)
+-git init => (Ya dentro de la carpeta en la que quieres iniciar git)
+-git add <nombre-archivo> || <.> => Añade los archivos a la Stage area.
+-git status => Indica el estado de los archivos de la Working y Stage Area.
+-git rm --cached <nombre> -a => para eliminar un archivo del área de preparación (staging area) de Git sin eliminarlo del sistema de archivos local.
+-git commit -m "Comentario obligatorio"-> Confirma los cambios en los archivos de la Staged area (-a) añada automáticamente al área de preparación todos los archivos modificados, no incluye archivos nuevos . 
+-git commit --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit anterior.
+
