@@ -13,15 +13,30 @@ CONFIGURACIÓN INICIAL
 (COMANDOS HABITUALES)
 -cd <nombre> => para moverse entre carpetas || cd ../ => para retroceder de carpeta
 -mkdir <nombre> =>crear carpeta || rmdir <nombre> =>eliminar carpeta
+-touch <nombre> =>crear un archivo
 -ls => muestra los archivos y carpetas que hay en tu ubicacion
-ls -a => muestra tambien los archivos ocultos
+-ls -a => muestra tambien los archivos ocultos
 -pwd => muestra la ruta en la que estas actualmente
+-rm => eliminar archivo
 
 (ADD Y COMMINTS)
 -git init => (Ya dentro de la carpeta en la que quieres iniciar git)
 -git add <nombre-archivo> || <.> => Añade los archivos a la Stage area.
--git status => Indica el estado de los archivos de la Working y Stage Area.
--git rm --cached <nombre> -a => para eliminar un archivo del área de preparación (staging area) de Git sin eliminarlo del sistema de archivos local.
 -git commit -m "Comentario obligatorio"-> Confirma los cambios en los archivos de la Staged area (-a) añada automáticamente al área de preparación todos los archivos modificados, no incluye archivos nuevos . 
 -git commit --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit anterior.
+-git branch -M main => renombrar la rama actual a "main", forzando el cambio si ya existe una rama con ese nombre.
+-git remote add origin https://github.com/alvarooo32/despliegue-web-2024.git => enlazar con el repositorio
+-git status => Indica el estado de los archivos de la Working y Stage Area (-s) para mostrarlo de forma resumida.
+-git rm --cached <nombre> -a => para eliminar un archivo del área de preparación (staging area) de Git sin eliminarlo del sistema de archivos local.
+-git push -u origin main =>  envía los cambios de la rama "main" al repositorio "origin" y configura "main" como la rama predeterminada para futuros git push y git pull.
 
+
+(GIT RESTORE Y CHECKOUT)
+-git restore <nombre> => recupero el archivo borrado
+-git checkout <nombre> => vuelve a la ultima vez que guardastes los cambios (al ultimo commit), si NO esta en el staging areaa
+-git reset --hard => deshace los cambios en tu repositorio, tanto en el staging area como en tu directorio de trabajo.
+-git mv <nombreAntiguo> <nombreNuevo> => cambia de nombre al archivo
+
+(GIT DIFF) 
+- git diff --staged => muestra las diferencias entre que hay en el staged area
+- git 
