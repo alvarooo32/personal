@@ -32,8 +32,9 @@ CONFIGURACIÓN INICIAL
 -git status => Indica el estado de los archivos de la Working y Stage Area (-s) para mostrarlo de forma resumida.
 -git rm <nombre>-> Borra un archivo del proyecto git.
 	+--cached <nombre> -a => para eliminar un archivo del staging area de Git sin eliminarlo del local.
--git push || git push -u origin main =>  envía los cambios de la rama "main" al repositorio "origin" y configura "main" como la rama predeterminada para futuros git push y git pull.
-
+-git push =>  sube cambios a una rama remota ya configurada.
+	+ git push -u origin main => empuja los commits de la rama local "main" al repositorio remoto "origin"
+-git clone <urlREPO> => para colnar el repositorio (Por SSH o HTTPS)
 
 (GIT RESTORE Y CHECKOUT)
 -git restore <nombre> => recupero el archivo borrado
@@ -66,8 +67,20 @@ CONFIGURACIÓN INICIAL
 -git merge <nombreRama> => unir las ramas (Pon el nombre de la rama a ala que t quieras unir)
 
 (GIT PULL Y GIT FETCH ??)
--git pull || git pull origin main-> Descarga los archivos del repositorio remoto.
--git fetch -> Actualiza los metadatos del repositorio remoto.
+-git pull || git pull origin main => Descarga los archivos que han sufrido cambios del repositorio
+-git fetch => Actualiza los metadatos del repositorio remoto.
 
 (ALIAS ??)
 -git config --global alias.<abreviatura> <comando a abreviar> => Crea un alias para llamar a un comando.
+
+(CLASE 10/10/2024)
+-git blame <nombreArchivo> => para saber quien ha modificado los ficheros
+-git show => te enseña los detalles del ultimo commit
+-git stash => para guardar temporalmente cambios en tu directorio de trabajo sin necesidad de hacer un commit (en local) menos los untracked
+	+ pop => rescata a los archivos stasheados
+	+ list => lista de stash guardados
+	+ drop => elimina el stash
+
+(Cambiar remote HTTPS o SSH)
+-git remote rm origin => se elimina
+-git remote -v => si no sale nada se ha eliminado correctamente
