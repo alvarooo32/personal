@@ -18,6 +18,8 @@ CONFIGURACIÓN INICIAL
 -ls -a => muestra tambien los archivos ocultos
 -pwd => muestra la ruta en la que estas actualmente
 -rm => eliminar archivo
+-nano <nombreArchivo> => entra al archivo y puedes añadir cosas
+-cat <nombreArchivo> => muestra lo que hay en el archivo
 
 (ADD Y COMMINTS)
 -git init => (Ya dentro de la carpeta en la que quieres iniciar git)
