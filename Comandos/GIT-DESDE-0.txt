@@ -63,6 +63,7 @@ CONFIGURACIÓN INICIAL
 	+ -m <nombreNuevo> => cambia el nombre de la rama en la que estas
 -git switch <nombre-rama> => para moverte de rama
 	+ -c <nombre-rama> => crea y cambia a una nueva rama en un solo paso
+-git merge <nombreRama> => unir las ramas (Pon el nombre de la rama a ala que t quieras unir)
 
 (GIT PULL Y GIT FETCH ??)
 -git pull || git pull origin main-> Descarga los archivos del repositorio remoto.
