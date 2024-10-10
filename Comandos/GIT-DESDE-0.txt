@@ -84,3 +84,4 @@ CONFIGURACIÓN INICIAL
 (Cambiar remote HTTPS o SSH)
 -git remote rm origin => se elimina
 -git remote -v => si no sale nada se ha eliminado correctamente
+-git remote add origin <url HTTPS || url SSH> => enlazas con otro remoto
