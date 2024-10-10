@@ -35,7 +35,8 @@ CONFIGURACIÓN INICIAL
 
 (GIT RESTORE Y CHECKOUT)
 -git restore <nombre> => recupero el archivo borrado
--git checkout <nombre> => vuelve a la ultima vez que guardastes los cambios (al ultimo commit), si NO esta en el staging area
+-git checkout <id del commit ||  master> -> Cambiamos la HEAD  al commit que queramos.
+	+ checkout <id commit> -- <ruta_archivo> -> Restaura la version de un archivo específico de un commit distinto.
 -git reset --hard => deshace los cambios en tu repositorio, tanto en el staging area como en tu directorio de trabajo.
 -git mv <nombreAntiguo> <nombreNuevo> => cambia de nombre al archivo
 
